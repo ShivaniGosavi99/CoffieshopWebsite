@@ -1,0 +1,298 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 90vh;
+  }
+
+body
+{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f1f1f1;
+
+
+}
+.about
+{
+
+    background: url(two.jpg) no-repeat left;
+	/*width: 70%;
+	height: 20%;*/
+	background-size: 55%;
+	margin-left: 10%;
+	overflow: hidden;
+	padding: 100px 0;
+}
+.inner-section 
+{
+width: 50%;
+
+float: right;
+background-color: #fdfdfd;
+padding: 70px;
+box-shadow: 10px 10px 8px rgba(0,0,0.3);
+}
+.inner-section h1
+{
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: 900;
+}
+.text
+{
+	font-size: 13px;
+	color: #545454;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.skills button
+{
+	font-size: 22px;
+	text-align: center;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 20px;
+	padding: 8px;
+	width: 200px;
+	background-color: #00999c;
+	color: white;
+	cursor: pointer;
+}
+.skills button:hover
+{
+	transition: 1s;
+	background-color: #ecf5f5;
+	color: #00999c;
+}
+@media screen and(max-width: 1200px)
+{
+	.inner-section
+	{
+		padding: 80px;
+
+	}
+}
+@media screen and(max-width: 1000px)
+{
+	.about
+	{
+		background-size: 100%;
+		padding: 100px 40px;
+
+	}
+	.inner-section
+	{
+         width: 100%;
+	}
+}
+@media screen and(max-width: 600px)
+{
+	.about
+	{
+		padding: 0;
+	}
+	.inner-section
+	{
+		padding: 60px;
+	}
+	.skills button
+	{
+		font-size: 19px;
+		padding: 5px;
+		width: 160px;
+	}
+
+}
+
+
+/*hot pics */
+
+ .container
+ {
+ 	margin-top: 5%;
+ 	max-width: 60%;
+ 	max-height: 50%;
+ }
+ .titlecake{
+  text-align:center;
+  margin-bottom:60px;
+}
+.titlecake h4{
+  text-transform:capitalize;
+  font-size:36px;
+  position:relative;
+  display:inline-block;
+  padding-bottom:10px;
+}
+.titlecake h4 span{
+  display:block;
+  font-size:18px;
+  font-style:italic;
+  margin-bottom:13px;
+}
+.titlecake h4:before{
+  position:absolute;
+  content:"";
+  width:100px;
+  height:2px;
+  background-color:#ff7720;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+/*end of hot pics/*
+
+
+/* menu section */
+
+.container1
+{
+	max-height: 50%;
+     max-width: 80%;
+}
+.row
+{
+	justify-content: space-between;
+	
+}
+.row h2
+{
+	margin-left: 25%;
+	margin-bottom: 5%;
+}
+.row h3
+{
+	margin-right: 20%;
+}
+
+.wrapper{
+  width:1200px;
+  margin:100px auto;
+}
+.title{
+  text-align:center;
+  margin-bottom:60px;
+}
+.title h4{
+  text-transform:capitalize;
+  font-size:36px;
+  position:relative;
+  display:inline-block;
+  padding-bottom:10px;
+}
+.title h4 span{
+  display:block;
+  font-size:18px;
+  font-style:italic;
+  margin-bottom:10px;
+}
+.title h4:before{
+  position:absolute;
+  content:"";
+  width:100px;
+  height:2px;
+  background-color:#ff7720;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+.menu{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:;
+  margin-left: 5%;
+
+}
+.single-menu{
+  flex-basis:500px;
+  margin-bottom:20px;
+  padding-bottom:20px;
+  border-bottom:1px solid #ddd;
+}
+.single-menu:nth-child(5), .single-menu:nth-child(6){
+  border-bottom:0;
+}
+.single-menu{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+.single-menu:hover img{
+  border-radius:0;
+}
+.single-menu img{
+  max-width:130px;
+  margin-right:10px;
+  border-radius:50%;
+  border:1px solid #ddd;
+  padding:2px;
+  transition:.5s;
+  margin-left: 10%;
+}
+.single-menu h4{
+  text-transform:capitalize;
+  font-size:22px;
+  border-bottom:1px dashed #333;
+  margin-bottom:5px;
+  padding-bottom:5px;
+}
+.single-menu h4 span{
+  float:right;
+  color:#ff7720;
+  font-style:italic;
+}
+
+
+
+
+
+
